@@ -63,7 +63,7 @@ const levels = [
             res2=(num2*4)*(num2*4);
             if(res1>res2){
             printf("el primer número %d", res1);
-            printf ("es mayor al segundo numero %d", res2);
+            printf ("es mayor al segundo número %d", res2);
             }
             if(res1<res2){
             printf("el primer número %d", res1);
