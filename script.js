@@ -71,7 +71,7 @@ const levels = [
             }
             if (res1==res2){
             printf("el primer numero %d", res1);
-            printf ("es iguqal al segundo numero %d", res2);
+            printf ("es igual al segundo numero %d", res2);
             }
             }
             `;
