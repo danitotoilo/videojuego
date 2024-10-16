@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('paisaje.jpg');
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Evitar scroll */
+}
+
+#game-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    width: 100%;
+    position: relative; /* Asegurar que todo esté en el mismo contexto de posición */
+}
+
+#instructions {
+    display: none;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#game-content {
+    display: flex;
+    align-items: flex-start; /* Alinear imagen y textarea al inicio */
+}
+
+#steve {
+    height: 150px;
+    margin-right: 2px;
+    margin-bottom: 10px;
+}
+
+#level-container {
+    flex: 1;
+}
+
+textarea {
+    width: 100%;
+    margin-top: 10px;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+#controls {
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#feedback, #hint {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.centered-audio {
+    position: absolute;
+    top: 15%; /* Baja el audio un poco más */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Ajusta horizontalmente */
+    z-index: 100; /* Asegura que esté por encima de otros elementos */
+}
+
+#initial-audio {
+    width: 35%; /* Ajustar el ancho según tu necesidad */
+    margin: 0 auto; /* Centrar si el contenedor lo permite */
+    position: relative; /* Para seguir el flujo de la página */
+}
+
+#image-container {
+    position: absolute; /* Permite posicionar las imágenes dentro de este contenedor */
+    bottom: 50px; /* Espacio desde el fondo de la página */
+    left: 0; /* Alinea al lado izquierdo */
+    right: 0; /* Alinea al lado derecho */
+    display: flex; /* Utiliza flexbox */
+    justify-content: space-between; /* Espaciado igual entre las imágenes */
+    align-items: flex-end; /* Alinea las imágenes al fondo del contenedor */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    padding: 0 20px; /* Espacio en los lados */
+}
+
+.bottom-left-image {
+    height: 200px; /* Ajusta el tamaño según sea necesario */
+    margin-bottom: 100px; /* Mueve la imagen hacia arriba */
+    margin-left: 30px; /* Ajusta hacia la izquierda */
+    transform: translateY(-10px); /* Ajusta la posición verticalmente */
+}
+
+.bottom-right-image {
+    height: 200px; /* Ajusta el tamaño según sea necesario */
+    margin-bottom: 100px; /* Mueve la imagen hacia arriba */
+    margin-right: 25px; /* Ajusta hacia la derecha */
+    transform: translateY(-10px); /* Ajusta la posición verticalmente */
+}

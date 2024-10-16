@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Programación - Daniel Barreto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="image-container">
+        <img id="left-image" src="lobo-removebg-preview.png" alt="Imagen Izquierda" class="bottom-left-image">
+        <img id="right-image" src="creeper.png" alt="Imagen Derecha" class="bottom-right-image">
+    </div>
+
+    <div id="game-container">
+        <h1>Juego de Programación en C++ - Daniel Barreto</h1>
+             
+        <button id="show-instructions" onclick="toggleInstructions()">Mostrar Instrucciones</button>
+        <div id="instructions">
+            <p>Instrucciones: En cada nivel debes resolver un ejercicio de programación en C++ (lenguaje C). Tienes 3 pistas disponibles por nivel y 5 intentos antes de perder. 
+            Recuerda que debes tener en cuenta los siguientes conceptos para los códigos:
+            - Float: es para definir números con decimales. 
+            - Int: es para definir números enteros.
+            - Siempre tienes que empezar con  #include "stdio.h", main().
+            - Los formatos para relacionar el tipo de dato son los siguientes: float=%f, int=%d.
+            - Se utiliza printf para mensajes o para mostrar un resultado: printf("mensaje %formato", variable);.
+            - Se utiliza scanf para capturar datos digitados por el usuario: scanf("formato", & variable);.
+            ¡Buena suerte!</p>
+        </div>
+
+        <audio id="initial-audio" controls class="centered-audio">
+            <source src="1.mp3" loop type="audio/mpeg" style="display: none;">
+        </audio>
+
+        <div id="game-content">
+            <img id="steve" src="stevenormal.png" alt="Steve de Minecraft">
+            <div id="level-container">
+                <p id="level-description"></p>
+                <textarea id="code-input" rows="10" cols="50" placeholder="Escribe tu código aquí..."></textarea>
+                <div id="controls">
+                    <button onclick="checkAnswer()">Enviar Respuesta</button>
+                    <button onclick="useHint()">Usar Pista (3 disponibles)</button>
+                </div>
+                <p id="feedback"></p>
+                <p id="hint"></p>
+            </div>
+        </div>
+
+        <button id="restart-button" style="display:none;" onclick="restartGame()">Reiniciar Juego</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
