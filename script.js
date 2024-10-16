@@ -7,9 +7,9 @@ const levels = [
             main()
             {
             int num1, num2, res;
-            printf("digite un numero");
+            printf("digite un número");
             scanf("%d",& num1);
-            printf("digite un segundo numero");
+            printf("digite un segundo número");
             scanf("%d",& num2);
             res=num1+num2;
             printf("el resultado de la suma es %d",res);
@@ -55,23 +55,23 @@ const levels = [
             main()
             {
             int num1, num2, res1, res2;
-            printf("digite un numero");
+            printf("digite un número");
             scanf("%d",& num1);
-            printf("digite un segundo numero");
+            printf("digite un segundo número");
             scanf("%d",& num2);
             res1=(num1*4)*(num1*4);
             res2=(num2*4)*(num2*4);
             if(res1>res2){
-            printf("el primer numero %d", res1);
+            printf("el primer número %d", res1);
             printf ("es mayor al segundo numero %d", res2);
             }
             if(res1<res2){
-            printf("el primer numero %d", res1);
-            printf ("es menor al segundo numero %d", res2);
+            printf("el primer número %d", res1);
+            printf ("es menor al segundo número %d", res2);
             }
             if (res1==res2){
-            printf("el primer numero %d", res1);
-            printf ("es igual al segundo numero %d", res2);
+            printf("el primer número %d", res1);
+            printf ("es igual al segundo número %d", res2);
             }
             }
             `;
