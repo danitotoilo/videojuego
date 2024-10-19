@@ -124,7 +124,7 @@ const levels = [
     },
     // Tus niveles actuales (6, 7, 8)
     {
-        description: "Nivel 6: Escribe una función en C++ que solicite dos numeros para hacer una suma.",
+        description: "Nivel 6: Escribe una función en lenguaje C que solicite dos numeros para hacer una suma.",
         correctAnswer: function(code) {
             const correctCode = `
             #include"stdio.h"
@@ -145,7 +145,7 @@ const levels = [
         ]
     },
     {
-        description: "Nivel 7: Escribe una función en C++ que necesita el area de un triangulo.",
+        description: "Nivel 7: Escribe una función en lenguaje C que necesita el area de un triangulo.",
         correctAnswer: function(code) {
             const correctCode = `
             #include"stdio.h"
@@ -169,7 +169,7 @@ const levels = [
         ]
     },
     {
-        description: "Nivel 8: Escribe una función en C++ que solicite dos números, multiplicarlos por 4, y luego elevarlos al cuadrado, y decir cuál número es el mayor, cuál número es el menor, o si los dos números son iguales.",
+        description: "Nivel 8: Escribe una función en lenguaje C que solicite dos números, multiplicarlos por 4, y luego elevarlos al cuadrado, y decir cuál número es el mayor, cuál número es el menor, o si los dos números son iguales.",
         correctAnswer: function(code) {
             const correctCode = `
             #include"stdio.h"
@@ -262,7 +262,7 @@ function checkAnswer() {
         }, 50);
     } else {
         attempts++;
-        if (attempts >= 8) {
+        if (attempts >= 5) {
             changeImages(imagesLose); // Cambiar imágenes a las de derrota
             endGame('Perdiste 😢 siguelo intentando', 'stevetriste.png');
         } else {
