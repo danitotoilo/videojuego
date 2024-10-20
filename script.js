@@ -28,7 +28,7 @@ const levels = [
         ]
     },
     {
-        description: "Nivel 3: se utilizan para interactuar con el usuario a través de la entrada y salida estándar.",
+        description: "Nivel 3: Se utilizan para interactuar con el usuario a través de la entrada y salida estándar.",
         correctAnswer: function(code) {
             const correctCode = `
             printf y scanf
@@ -71,7 +71,7 @@ const levels = [
     },
     // Tus niveles actuales (6, 7, 8)
     {
-        description: "¡Se ha aumentado la dificultad!, ahora tienes que armar estructuras, solo son 3 niveles ¡Tu puedes!.  Nivel 6: Escribe una función en lenguaje C que solicite dos numeros para hacer una suma.",
+        description: "¡Se ha aumentado la dificultad!, ahora tienes que armar estructuras, solo son 3 niveles ¡Tu puedes!.  Nivel 6: Escribe una función en lenguaje C que solicite dos números para hacer una suma.",
         correctAnswer: function(code) {
             const correctCode = `
             #include"stdio.h"
@@ -93,27 +93,27 @@ const levels = [
         ]
     },
     {
-        description: "Nivel 7: Escribe una función en lenguaje C que necesita el area de un triangulo.",
+        description: "Nivel 7: Escribe una función en lenguaje C que necesita el área de un triángulo.",
         correctAnswer: function(code) {
             const correctCode = `
             #include"stdio.h"
             main()
             {
             float base, altura, res;
-            printf("digite la base del triangulo");
+            printf("digite la base del triángulo");
             scanf("%f",& base);
-            printf("digite la altura del triangulo");
+            printf("digite la altura del triángulo");
             scanf("%f",& altura);
             res=(base*altura)/2;
-            printf("el area del triangulo es %f",res);
+            printf("el área del triángulo es %f",res);
             }
             `;
             return compareCode(correctCode, code);
         },
         hints: [
             "Pista 1: se utiliza float para definir tres cosas, la base, altura y el resultado.",
-            "Pista 2: tienes que decir: digite la base del triangulo, y despues dices: digite la altura del triangulo.",
-            "Pista 3: al final para mostrar el resultado tienes que decir: 'el area del triangulo es %f',res.",
+            "Pista 2: tienes que decir: digite la base del triángulo, y despues dices: digite la altura del triángulo.",
+            "Pista 3: al final para mostrar el resultado tienes que decir: 'el área del triángulo es %f',res.",
         ]
     },
     {
@@ -124,32 +124,32 @@ const levels = [
             main()
             {
             int num1, num2, res1, res2;
-            printf("digite un numero");
+            printf("digite un número");
             scanf("%d",& num1);
-            printf("digite un segundo numero");
+            printf("digite un segundo número");
             scanf("%d",& num2);
             res1=(num1*4)*(num1*4);
             res2=(num2*4)*(num2*4);
             if(res1>res2){
-            printf("el primer numero %d", res1);
-            printf ("es mayor al segundo numero %d", res2);
+            printf("el primer número %d", res1);
+            printf ("es mayor al segundo número %d", res2);
             }
             if(res1<res2){
-            printf("el primer numero %d", res1);
-            printf ("es menor al segundo numero %d", res2);
+            printf("el primer número %d", res1);
+            printf ("es menor al segundo número %d", res2);
             }
             if (res1==res2){
-            printf("el primer numero %d", res1);
-            printf ("es iguqal al segundo numero %d", res2);
+            printf("el primer número %d", res1);
+            printf ("es igual al segundo número %d", res2);
             }
             }
             `;
             return compareCode(correctCode, code);
         },
         hints: [
-            "Pista 1: se utiliza int para definir cuatro cosas, los dos numeros y los dos resultados para luego compararlos.",
+            "Pista 1: se utiliza int para definir cuatro cosas, los dos números y los dos resultados para luego compararlos.",
             "Pista 2: tienes que hacer dos operaciones que son las siguientes: res1=(num1*4)*(num1*4) y res2=(num2*4)*(num2*4).",
-            "Pista 3: tienes que crear 3 if, si el primer numero es mayor al segundo, si el primer numero es menor al segundo o si el primero numero es igual al segundo.",
+            "Pista 3: tienes que crear 3 if, si el primer número es mayor al segundo, si el primer número es menor al segundo o si el primer número es igual al segundo.",
         ]
     }
 ];
