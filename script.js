@@ -71,7 +71,7 @@ const levels = [
     },
     // Tus niveles actuales (6, 7, 8)
     {
-        description: "Nivel 6: Escribe una función en lenguaje C que solicite dos numeros para hacer una suma.",
+        description: "¡Se ha aumentado la dificultad!, ahora tienes que armar estructuras, solo son 3 niveles ¡Tu puedes!.  Nivel 6: Escribe una función en lenguaje C que solicite dos numeros para hacer una suma.",
         correctAnswer: function(code) {
             const correctCode = `
             #include"stdio.h"
