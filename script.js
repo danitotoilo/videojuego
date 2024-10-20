@@ -1,6 +1,6 @@
 const levels = [
     {
-        description: "Nivel 1:  cual es el archivo de cabecera que siempre debe estar.",
+        description: "Nivel 1: Cual es el archivo de cabecera que siempre debe estar.",
         correctAnswer: function(code) {
             const correctCode = `
             #include"stdio.h"
@@ -8,9 +8,9 @@ const levels = [
             return compareCode(correctCode, code);
         },
         hints: [
-            "Pista 1: empieza con #",
-            "Pista 2: utiliza las comillas despues de la primera palabra",
-            "Pista 3: dentro de las comillas se utiliza un .h",
+            "Pista 1: Empieza con #",
+            "Pista 2: Utiliza las comillas despues de la primera palabra",
+            "Pista 3: Dentro de las comillas se utiliza un .h",
         ]
     },
     {
@@ -22,9 +22,9 @@ const levels = [
             return compareCode(correctCode, code);
         },
         hints: [
-            "Pista 1: es una letra de cada tipo(el decimal, y entero)",
-            "Pista 2: se utiliza el % en cada tipo",
-            "Pista 3: se utiliza para definir el tipo de datos que una variable puede almacenar.",
+            "Pista 1: Es una letra de cada tipo(el decimal, y entero)",
+            "Pista 2: Se utiliza el % en cada tipo",
+            "Pista 3: Se utiliza para definir el tipo de datos que una variable puede almacenar",
         ]
     },
     {
@@ -37,12 +37,12 @@ const levels = [
         },
         hints: [
             "Pista 1: Primero pones la salida de datos y luego la entrada de datos",
-            "Pista 2: la salida de datos lo utilizas para decir,´Salida de datos´(´Ingrese un número´)",
-            "Pista 3: la entrada de datos lo utilizas para decir,´entrada de datos´(´%d´, &num1)",
+            "Pista 2: La salida de datos lo utilizas para decir, Salida de datos('Ingrese un número')",
+            "Pista 3: La entrada de datos lo utilizas para decir, entrada de datos('%d', & num1)",
         ]
     },
     {
-        description: "Nivel 4: ¿Cuál es el nombre de la función que actúa como punto de entrada en un programa en C?",
+        description: "Nivel 4: ¿Cuál es el nombre de la función que actúa como punto de entrada en un programa en C?.",
         correctAnswer: function(code) {
             const correctCode = `
             main()
@@ -50,13 +50,13 @@ const levels = [
             return compareCode(correctCode, code);
         },
         hints: [
-            "Pista 1: Esta función es obligatoria en todos los programas en C.",
-            "Pista 2: Su ejecución comienza cuando se inicia el programa.",
+            "Pista 1: Esta función es obligatoria en todos los programas en C",
+            "Pista 2: Su ejecución comienza cuando se inicia el programa",
             "Pista 3: Su declaración más común incluye la palabra clave int",
         ]
     },
     {
-        description: "Nivel 5: ¿Qué operador se utiliza en C para obtener la dirección de una variable?",
+        description: "Nivel 5: ¿Qué operador se utiliza en C para obtener la dirección de una variable?.",
         correctAnswer: function(code) {
             const correctCode = `
             &
@@ -64,9 +64,9 @@ const levels = [
             return compareCode(correctCode, code);
         },
         hints: [
-            "Pista 1: Es un símbolo que se usa antes del nombre de la variable.",
-            "Pista 2: Se utiliza comúnmente al trabajar con punteros.",
-            "Pista 3: Este operador también se utiliza para denotar una referencia.",
+            "Pista 1: Es un símbolo que se usa antes del nombre de la variable",
+            "Pista 2: Se utiliza comúnmente al trabajar con punteros",
+            "Pista 3: Este operador también se utiliza para denotar una referencia",
         ]
     },
     // Tus niveles actuales (6, 7, 8)
@@ -81,15 +81,15 @@ const levels = [
             scanf("%d", & num1);
             printf("Ingrese el segundo número: ");
             scanf("%d", & num2);
-            res= num1+num2
-            printf("el resultado de la suma es %d", res);
+            res= num1+num2;
+            printf("El resultado de la suma es %d", res);
             }
             `;
             return compareCode(correctCode, code);
         },
-        hints: ["Pista 1: se utiliza int para definir tres cosas, los dos numeros y el resultado.",
-            "Pista 2: tienes que decir: Ingrese el primer número: , y despues dices: Ingrese el segundo número:",
-            "Pista 3: al final para mostrar el resultado tienes que decir: 'el resultado de la suma es %d', res.",
+        hints: ["Pista 1: Se utiliza int para definir tres cosas, los dos numeros y el resultado",
+            "Pista 2: Utilizando printf tienes que decir: ('Ingrese el primer número:') , y despues dices: ('Ingrese el segundo número:')",
+            "Pista 3: Al final para mostrar el resultado tienes que utilizar ptintf y decir: ('El resultado de la suma es %d', res)",
         ]
     },
     {
@@ -100,20 +100,20 @@ const levels = [
             main()
             {
             float base, altura, res;
-            printf("digite la base del triángulo");
+            printf("Digite la base del triángulo");
             scanf("%f",& base);
-            printf("digite la altura del triángulo");
+            printf("Digite la altura del triángulo");
             scanf("%f",& altura);
             res=(base*altura)/2;
-            printf("el área del triángulo es %f",res);
+            printf("El área del triángulo es %f", res);
             }
             `;
             return compareCode(correctCode, code);
         },
         hints: [
-            "Pista 1: se utiliza float para definir tres cosas, la base, altura y el resultado.",
-            "Pista 2: tienes que decir: digite la base del triángulo, y despues dices: digite la altura del triángulo.",
-            "Pista 3: al final para mostrar el resultado tienes que decir: 'el área del triángulo es %f',res.",
+            "Pista 1: Se utiliza float para definir tres cosas, la base, altura y el resultado.",
+            "Pista 2: Utilizando printf tienes que decir: ('Digite la base del triángulo'), y despues dices: ('Digite la altura del triángulo.')",
+            "Pista 3: Al final para mostrar el resultado tienes que utilizar printf y decir: ('El área del triángulo es %f', res)",
         ]
     },
     {
@@ -124,32 +124,32 @@ const levels = [
             main()
             {
             int num1, num2, res1, res2;
-            printf("digite un número");
+            printf("Digite un número");
             scanf("%d",& num1);
-            printf("digite un segundo número");
+            printf("Digite un segundo número");
             scanf("%d",& num2);
             res1=(num1*4)*(num1*4);
             res2=(num2*4)*(num2*4);
             if(res1>res2){
-            printf("el primer número %d", res1);
-            printf ("es mayor al segundo número %d", res2);
+            printf("El primer número %d", res1);
+            printf ("Es mayor al segundo número %d", res2);
             }
             if(res1<res2){
-            printf("el primer número %d", res1);
-            printf ("es menor al segundo número %d", res2);
+            printf("El primer número %d", res1);
+            printf ("Es menor al segundo número %d", res2);
             }
             if (res1==res2){
-            printf("el primer número %d", res1);
-            printf ("es igual al segundo número %d", res2);
+            printf("El primer número %d", res1);
+            printf ("Es igual al segundo número %d", res2);
             }
             }
             `;
             return compareCode(correctCode, code);
         },
         hints: [
-            "Pista 1: se utiliza int para definir cuatro cosas, los dos números y los dos resultados para luego compararlos.",
-            "Pista 2: tienes que hacer dos operaciones que son las siguientes: res1=(num1*4)*(num1*4) y res2=(num2*4)*(num2*4).",
-            "Pista 3: tienes que crear 3 if, si el primer número es mayor al segundo, si el primer número es menor al segundo o si el primer número es igual al segundo.",
+            "Pista 1: Se utiliza int para definir cuatro cosas, los dos números y los dos resultados para luego compararlos.",
+            "Pista 2: Tienes que hacer dos operaciones que son las siguientes: res1=(num1*4)*(num1*4) y res2=(num2*4)*(num2*4).",
+            "Pista 3: Tienes que crear 3 if, si el primer número es mayor al segundo, si el primer número es menor al segundo o si el primer número es igual al segundo.",
         ]
     }
 ];
