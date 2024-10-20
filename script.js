@@ -78,9 +78,9 @@ const levels = [
             main() {
             int num1, num2, res;
             printf("Ingrese el primer número: ");
-            scanf("%d", &num1);
+            scanf("%d", & num1);
             printf("Ingrese el segundo número: ");
-            scanf("%d", &num2);
+            scanf("%d", & num2);
             res= num1+num2
             printf("el resultado de la suma es %d", res);
             }
