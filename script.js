@@ -1,125 +1,72 @@
 const levels = [
     {
-        description: "Nivel 1: Escribe una función en C++ que solicite dos enteros y los sume.",
+        description: "Nivel 1:  cual es el archivo de cabecera que siempre debe estar.",
         correctAnswer: function(code) {
             const correctCode = `
             #include"stdio.h"
-            main() {
-            int a, b;
-            printf("Digite el primer número: ");
-            scanf("%d", &a);
-            printf("Digite el segundo número: ");
-            scanf("%d", &b);
-            printf("La suma es: %d", a + b);
-            }
             `;
             return compareCode(correctCode, code);
         },
         hints: [
-            "Pista 1: Se utiliza int para definir dos números.",
-            "Pista 2: Usa scanf para leer los números.",
-            "Pista 3: Muestra el resultado con printf.",
+            "Pista 1: empieza con #",
+            "Pista 2: utiliza las comillas despues de la primera palabra",
+            "Pista 3: dentro de las comillas se utiliza un .h",
         ]
     },
     {
-        description: "Nivel 2: Escribe una función en C++ que solicite tres enteros y calcule el producto.",
+        description: "Nivel 2: Especificador de tipo de datos decimal y enteros.",
         correctAnswer: function(code) {
             const correctCode = `
-            #include"stdio.h"
-            main() {
-            int a, b, c;
-            printf("Digite el primer número: ");
-            scanf("%d", &a);
-            printf("Digite el segundo número: ");
-            scanf("%d", &b);
-            printf("Digite el tercer número: ");
-            scanf("%d", &c);
-            printf("El producto es: %d", a * b * c);
-            }
+             %f y %d
             `;
             return compareCode(correctCode, code);
         },
         hints: [
-            "Pista 1: Define tres números enteros.",
-            "Pista 2: Usa scanf para leer los números.",
-            "Pista 3: Muestra el producto con printf.",
+            "Pista 1: es una letra de cada tipo(el decimal, y entero)",
+            "Pista 2: se utiliza el % en cada tipo",
+            "Pista 3: se utiliza para definir el tipo de datos que una variable puede almacenar.",
         ]
     },
     {
-        description: "Nivel 3: Escribe una función en C++ que solicite cuatro números decimales y calcule el promedio.",
+        description: "Nivel 3: se utilizan para interactuar con el usuario a través de la entrada y salida estándar.",
         correctAnswer: function(code) {
             const correctCode = `
-            #include"stdio.h"
-            main() {
-            float a, b, c, d, promedio;
-            printf("Digite el primer número: ");
-            scanf("%f", &a);
-            printf("Digite el segundo número: ");
-            scanf("%f", &b);
-            printf("Digite el tercer número: ");
-            scanf("%f", &c);
-            printf("Digite el cuarto número: ");
-            scanf("%f", &d);
-            promedio = (a + b + c + d) / 4;
-            printf("El promedio es: %f", promedio);
-            }
+            printf y scanf
             `;
             return compareCode(correctCode, code);
         },
         hints: [
-            "Pista 1: Usa float para los números.",
-            "Pista 2: Lee los números con scanf y formato %f.",
-            "Pista 3: Calcula el promedio dividiendo por 4.",
+            "Pista 1: Primero pones la salida de datos y luego la entrada de datos",
+            "Pista 2: la salida de datos lo utilizas para decir,´Salida de datos´(´Ingrese un número´)",
+            "Pista 3: la entrada de datos lo utilizas para decir,´entrada de datos´(´%d´, &num1)",
         ]
     },
     {
-        description: "Nivel 4: Escribe una función en C++ que solicite un número entero y determine si es positivo o negativo.",
+        description: "Nivel 4: ¿Cuál es el nombre de la función que actúa como punto de entrada en un programa en C?",
         correctAnswer: function(code) {
             const correctCode = `
-            #include"stdio.h"
-            main() {
-            int num;
-            printf("Digite un número: ");
-            scanf("%d", &num);
-            if (num > 0) {
-            printf("El número es positivo");
-            } else if (num < 0) {
-            printf("El número es negativo");
-            } else {
-            printf("El número es cero");
-            }
-            }
+            main()
             `;
             return compareCode(correctCode, code);
         },
         hints: [
-            "Pista 1: Usa int para definir el número.",
-            "Pista 2: Usa un if para comprobar si es positivo o negativo.",
-            "Pista 3: Considera también el caso en que el número sea cero.",
+            "Pista 1: Esta función es obligatoria en todos los programas en C.",
+            "Pista 2: Su ejecución comienza cuando se inicia el programa.",
+            "Pista 3: Su declaración más común incluye la palabra clave int",
         ]
     },
     {
-        description: "Nivel 5: Escribe una función en C++ que solicite un número entero y determine si es par o impar.",
+        description: "Nivel 5: ¿Qué operador se utiliza en C para obtener la dirección de una variable?",
         correctAnswer: function(code) {
             const correctCode = `
-            #include"stdio.h"
-            main() {
-            int num;
-            printf("Digite un número: ");
-            scanf("%d", &num);
-            if (num % 2 == 0) {
-            printf("El número es par");
-            } else {
-            printf("El número es impar");
-            }
-            }
+            &
             `;
             return compareCode(correctCode, code);
         },
         hints: [
-            "Pista 1: Usa int para definir el número.",
-            "Pista 2: Usa el operador % para verificar si es par o impar.",
-            "Pista 3: Muestra el resultado con printf.",
+            "Pista 1: Es un símbolo que se usa antes del nombre de la variable.",
+            "Pista 2: Se utiliza comúnmente al trabajar con punteros.",
+            "Pista 3: Este operador también se utiliza para denotar una referencia.",
         ]
     },
     // Tus niveles actuales (6, 7, 8)
@@ -129,18 +76,19 @@ const levels = [
             const correctCode = `
             #include"stdio.h"
             main() {
-            int num1, num2;
+            int num1, num2, res;
             printf("Ingrese el primer número: ");
             scanf("%d", &num1);
             printf("Ingrese el segundo número: ");
             scanf("%d", &num2);
-            printf("La suma es: %d", num1 + num2);
+            res= num1+num2
+            printf("el resultado de la suma es %d", res);
             }
             `;
             return compareCode(correctCode, code);
         },
         hints: ["Pista 1: se utiliza int para definir tres cosas, los dos numeros y el resultado.",
-            "Pista 2: tienes que decir: digite un numero, y despues dices: digite un segundo numero.",
+            "Pista 2: tienes que decir: Ingrese el primer número: , y despues dices: Ingrese el segundo número:",
             "Pista 3: al final para mostrar el resultado tienes que decir: 'el resultado de la suma es %d', res.",
         ]
     },
