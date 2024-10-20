@@ -149,7 +149,7 @@ const levels = [
         hints: [
             "Pista 1: Se utiliza int para definir cuatro cosas, los dos números y los dos resultados para luego compararlos.",
             "Pista 2: Tienes que hacer dos operaciones que son las siguientes: res1=(num1*4)*(num1*4) y res2=(num2*4)*(num2*4).",
-            "Pista 3: Tienes que crear 3 if, si el primer número es mayor al segundo, si el primer número es menor al segundo o si el primer número es igual al segundo. Ejm if(res1>res2){, printf(El primer número %d, res1); printf (Es mayor al segundo número %d, res2); }",
+            "Pista 3: Tienes que crear 3 if, si el primer número es mayor al segundo, el primer número es menor al segundo o el primer número es igual al segundo. Ejm if(res1>res2){, printf(El primer número %d, res1); printf (Es mayor al segundo número %d, res2);}",
         ]
     }
 ];
